@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skeleton.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Handlee&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark nav">
+
+            <i class="fas fa-paw fa-3x logo"></i>
+            <span class="logotit" href="#">Pet-Shop</span>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="opciones">
+                <ul class="navbar-nav menu d-flex justify-content-end">
+                    <li class="nav-item active item">
+                        <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-link text-light" href="#">Artículos</a>
+                    </li>
+                </ul>
+            </div> 
+            
+            <div class="submenu">
+                <p class="pt-3 px-4"><i class="fas fa-shopping-cart fa-2x carro"></i></p>
+                
+                <div id="carrito">
+                    <table id="lista-accesorios" class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+            
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div>
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2>Accesorios para mascotas</h2>
+                                <p>Las mejores ofertas, los mejores precios !!</p>
+                                <form id="busqueda" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que te gustaría Comprar?" id="buscador">
+                                    <input type="button" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Área del Section -->
+    <div id="contenedor-accesorios" class="container cuerpo">
+        <h1 id="encabezado" class="encabezado">Productos</h1>
+        <div class="row f1 d-flex justify-content-around">
+
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="Img/gareneraa.PNG" class="card-img-top img-productos" alt="...">
+                <div class="card-body">
+                  <h5 class="t-titulo" id="gareneraa">Arenera plástica Azul</h5>
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text t-marca">Nit Plus</p>
+                    <span class="card-text" id="precio"> $ 33000 </span>
+                  </div>
+                  <a href="#" class="btn btn-primary agregarCarrito" data-id="1">Añadir al carrito</a>
+                </div>
+              </div>
+              <!--         ///////////////////////////////////////                   -->
+            
+              <div class="card mb-4" style="width: 18rem;">
+                <img src="Img/dogchow55.PNG" class="card-img-top img-productos" alt="...">
+                <div class="card-body">
+                  <h5 class="t-titulo" id="aperro">Alimento para perro</h5>
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text t-marca">Dog Chow X 55kg</p>
+                    <span class="card-text" id="precio"> $ 94000 </span>
+                  </div>
+                  <a href="#" class="btn btn-primary agregarCarrito" data-id="2">Añadir al carrito</a>
+                </div>
+              </div>
+              <!--         ///////////////////////////////////////                   -->
+
+              <div class="card mb-4" style="width: 18rem;">
+                <img src="Img/pcollarMetalico.PNG" class="card-img-top img-productos" alt="...">
+                <div class="card-body">
+                  <h5 class="t-titulo" id="pcollarM">Collar de perro Métalico</h5>
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text t-marca">Genérico</p>
+                    <span class="card-text" id="precio">$ 26000 </span>
+                  </div>
+
+                  <a href="#" class="btn btn-primary agregarCarrito" data-id="3">Añadir al carrito</a>
+                </div>
+              </div>
+        </div> <!--.row-->
+
+        <div class="row f1 d-flex justify-content-around">
+            <div class="card mb-4" style="width: 18rem;">
+                <img src="Img/collarperro.PNG" class="card-img-top img-productos" alt="...">
+                <div class="card-body">
+                  <h5 class="t-titulo" id="pcollar">Collar de perro</h5>
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text t-marca">RuffWear</p>
+                    <span class="card-text" id="precio">$ 45000 </span>
+                  </div>
+                  <a href="#" class="btn btn-primary agregarCarrito" data-id="4">Añadir al carrito</a>
+                </div>
+              </div>
+              <!--         ///////////////////////////////////////                   -->
+            
+              <div class="card mb-4" style="width: 18rem;">
+                <img src="Img/garenerav.PNG" class="card-img-top img-productos" alt="...">
+                <div class="card-body">
+                  <h5 class="t-titulo" id="garenerav">Arenera plástica Verde</h5>
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text t-marca">Kendy</p>
+                    <span class="card-text" id="precio">$ 94000 </span>
+                  </div>
+
+                  <a href="#" class="btn btn-primary agregarCarrito" data-id="5">Añadir al carrito</a>
+                </div>
+              </div>
+              <!--         ///////////////////////////////////////                   -->
+
+              <div class="card mb-4" style="width: 18rem;">
+                <img src="Img/pcollarajustable.PNG" class="card-img-top img-productos" alt="...">
+                <div class="card-body">
+                  <h5 class="t-titulo" id="pcollarajustable">Collar de perro Ajustable</h5>
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text t-marca">Genérico</p>
+                    <span class="card-text" id="precio">$ 22000 </span>
+                  </div>
+                  <a href="#" class="btn btn-primary agregarCarrito" data-id="6">Añadir al carrito</a>
+                </div>
+              </div>
+        </div> <!--.row-->
+
+        <div class="row f1 d-flex justify-content-around">
+          <div class="card mb-4" style="width: 18rem;">
+              <img src="Img/palimentoc.PNG" class="card-img-top img-productos" alt="...">
+              <div class="card-body">
+                <h5 class="t-titulo" id="palimentoc">Alimento para perro</h5>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text t-marca">Chunky X 25kg</p>
+                  <span class="card-text" id="precio">$ 38000 </span>
+                </div>
+                <a href="#" class="btn btn-primary agregarCarrito" data-id="7">Añadir al carrito</a>
+              </div>
+            </div>
+            <!--         ///////////////////////////////////////                   -->
+          
+            <div class="card mb-4" style="width: 18rem;">
+              <img src="Img/galimentonat.PNG" class="card-img-top img-productos" alt="...">
+              <div class="card-body">
+                <h5 class="t-titulo" id="galimentonat">Alimento para gato</h5>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text t-marca">Naturalis X 25kg</p>
+                  <span class="card-text" id="precio">$ 35000 </span>
+                </div>
+
+                <a href="#" class="btn btn-primary agregarCarrito" data-id="5">Añadir al carrito</a>
+              </div>
+            </div>
+            <!--         ///////////////////////////////////////                   -->
+
+            <div class="card mb-4" style="width: 18rem;">
+              <img src="Img/galimenton.PNG" class="card-img-top img-productos" alt="...">
+              <div class="card-body">
+                <h5 class="t-titulo" id="galimenton">Alimento para gato</h5>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text t-marca">Nutre cat X 25kg</p>
+                  <span class="card-text" id="precio">$ 42000</span>
+                </div>
+                <a href="#" class="btn btn-primary agregarCarrito" data-id="6">Añadir al carrito</a>
+              </div>
+            </div>
+      </div> <!--.row-->
+    </div>
+
+
+    <!-- Js propios -->
+    <script src="app.js"></script>
+    <script src="app2.js"></script>
+    <!-- Fontawasome -->
+    <script src="https://kit.fontawesome.com/c8113a9dbc.js" crossorigin="anonymous"></script>
+    <!-- Js Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
